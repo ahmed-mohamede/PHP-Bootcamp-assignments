@@ -1,0 +1,142 @@
+<?php
+
+echo '<h1>PHP Bootcamp Assignments Lesson 1 to 5</h1>';
+
+/*
+asfsdf
+dfdsfdsf
+fdfsdfdsfd
+fsdfsdfdsf
+*/
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="<?php echo 'UTF-8' ?>">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><?php echo 'My First PHP Page' ?></title>
+</head>
+
+<body>
+  <div><?php echo 'We Love' ?></div>
+  <div><?php echo 'Elzero Channel' ?></div>
+
+  <?php
+  // echo 'Prevent Me From Running Please';
+  # echo 'Prevent Me From Running Please';
+  /* echo 'Prevent Me From Running Please'; */
+
+  /*
+    - My Application
+    - Version 1.0
+    - Created By Elzero
+    */
+
+
+
+  // All comments are wrong
+
+  // ## First Comment
+  # // # Second Comment
+  /* /* /* Third Comment */
+  ////// Fourth Comment
+
+  ?>
+</body>
+
+</html>
+
+<?php
+
+echo '<h1>PHP Bootcamp Assignments Lesson 6 to 12</h1>';
+
+
+echo var_dump((int) (15.2 + 14.7 + (10.5 + 10.5))); // 50 => Integer
+echo '<br>';
+echo '<br>';
+echo '<br>';
+
+
+echo 100 . '<br>';              // Method One
+print (100) . '<br>';              // Method Two
+var_dump(100) . '<br>';              // Method Three => Optional
+echo '<br>';
+echo '<br>';
+echo '<br>';
+
+
+echo ' Hello "Elzero" \\\\ """ We Love "$$PHP" ';             // Hello "Elzero" \\ """ We Love "$$PHP"
+echo '<br>';
+echo '<br>';
+echo '<br>';
+
+
+echo nl2br("We \n Love \n Elzero \n Web \n School");
+echo '<br>';
+echo '<br>';
+echo '<br>';
+
+
+
+$var = nl2br('Hello "\'Elzero\'"
+We Love $Programming$
+Languages Specially "PHP"');
+echo <<<code
+$var
+code;
+echo '<br>';
+echo '<br>';
+echo '<br>';
+
+
+$something = "Programming";
+
+echo <<<code
+Hello \PHP\
+We Love $something
+code;
+echo '<br>';
+echo '<br>';
+echo '<br>';
+
+
+echo (bool) gettype("Hello PHP");
+echo '<br>';
+echo gettype((int) gettype("Hello PHP"));
+echo '<br>';
+echo '<br>';
+echo '<br>';
+
+
+echo '<pre>';
+print_r([
+  'FrontEnd' => [
+    'html',
+    'css',
+    'js' => [
+      'Vuejs' => [
+        2 => 'v1',
+        3 => 'v2'
+      ],
+      'Reactjs',
+      'Svelte'
+    ]
+  ],
+  'BackEnd' => [
+    'PHP',
+    'MySQL',
+    'Security'
+  ],
+  'Git',
+  'GitHub',
+  'Testing' => [
+    'Unit Testing',
+    'End To End',
+    'Integration'
+  ]
+]);
+echo '</pre>';
