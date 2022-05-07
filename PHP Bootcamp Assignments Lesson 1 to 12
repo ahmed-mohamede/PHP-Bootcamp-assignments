@@ -82,12 +82,13 @@ echo '<br>';
 
 
 
-$var = nl2br('Hello "\'Elzero\'"
+
+$var = <<<'code'
+Hello "'Elzero'"
 We Love $Programming$
-Languages Specially "PHP"');
-echo <<<code
-$var
+Languages Specially "PHP"
 code;
+echo nl2br($var);
 echo '<br>';
 echo '<br>';
 echo '<br>';
