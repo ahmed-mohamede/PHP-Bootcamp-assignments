@@ -1,0 +1,156 @@
+<?php
+
+$index = 10;
+
+while ($index >= 1) {
+  echo $index--;
+  echo '<br>';
+}
+
+echo $threel = '<br><br><br>';
+
+$index = 0;
+
+while ($index < 20) {
+  echo $index += 2;
+  echo '<br>';
+}
+
+echo $threel;
+
+$index = 0;
+
+do {
+  echo $index += 2;
+  echo '<br>';
+} while ($index < 20);
+
+echo $threel;
+
+$index = 0;
+
+for (; $index < 20;) {
+  echo $index += 2;
+  echo '<br>';
+}
+
+echo $threel;
+
+$num = 2;
+
+echo --$num;
+echo '<br>';
+
+while ($num < 520) {
+  echo $num = $num * 2 + 2;
+  echo '<br>';
+  if ($num >= 382) {
+    break;
+  }
+}
+
+echo $threel;
+
+$start = 10;
+$end = 0;
+$stop = 3;
+$start++;
+
+
+for ($start; $end < $start;) {
+  if ($start == true . true) {
+    echo --$start;
+  } else {
+    echo $end . --$start;
+  }
+  echo '<br>';
+  if ($start == $stop) {
+    break;
+  }
+}
+
+echo $threel;
+
+$start = 0;
+$mix = [1, 2, 3, "A", "B", "C", 4];
+
+for ($start; $start <= 6; $start++) {
+  if ($mix[$start] == 'A' || $mix[$start] == 'B' || $mix[$start] == 'C' || $mix[$start] == +true) {
+    continue;
+  } else {
+    echo $mix[$start];
+    echo '<br>';
+  }
+}
+
+echo $threel;
+
+$money = ["Ahmed" => 100, "Sayed" => 150, "Osama" => 100, "Maher" => 250];
+
+foreach ($money as $name => $value) {
+  echo "The Name Is $name And I Need $value Pound From Him";
+  echo '<br>';
+}
+
+echo $threel;
+
+$mix = [1, 2, "A", "B", "C", 3, 4];
+$numbers = 0;
+$letters = 0;
+
+foreach ($mix as $index) {
+  if (gettype($index) == gettype('string')) {
+    $letters++;
+    continue;
+  } else {
+    echo $index;
+    echo '<br>';
+    $numbers++;
+  }
+}
+echo '<br>';
+echo "$numbers Numbers Printed";
+echo '<br>';
+echo "$letters Letters Ignored";
+
+echo $threel;
+
+$nums = [1, 13, 12, 20, 51, 17, 30];
+
+foreach ($nums as $index) {
+  if ($index % 2 == 0) {
+    echo $index / 2;
+    echo '<br>';
+  }
+}
+
+echo $threel;
+
+$help_num = 3;
+$nums = [4, 5, 6, 1, 2, 3];
+$names = ["Ahmed", "Sayed", "Osama", "Mahmoud", "Gamal"];
+
+--$help_num;
+--$help_num;
+--$help_num;
+
+for ($help_num; $help_num < $nums[true]; $help_num++) {
+  if ($names[$help_num] === 'Sayed' || $names[$help_num] === 'Osama') {
+    echo $names[$help_num];
+    echo '<br>';
+  } else {
+    continue;
+  }
+}
+
+echo $threel;
+
+$help_num = 4;
+$nums = [2, 4, 5, 6, 10];
+
+++$help_num;
+
+foreach ($nums as $index) {
+  echo "$index + " . $nums[--$help_num] . ' = ' . $index + $nums[$help_num];
+  echo '<br>';
+}
