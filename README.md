@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @ahmed-mohamede
-- 👀 I’m interested in >>> html, css, php, js, mysql, sql,
+- 👀 I’m interested in >>> html, css, php, js,
 - 🌱 I’m currently learning >>> php
 - 💞️ I’m looking to collaborate on NULL
 - 📫 How to reach me https://twitter.com/god138703
