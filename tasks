@@ -1,0 +1,192 @@
+  <?php
+
+# task one
+
+// Write Function Content Here
+
+// function greeting($name,$gen = "") {
+//   if($gen == "Male") {
+//     echo "hello mr $name"."<br>";
+//   } elseif ($gen == "Female") {
+//     echo "hello miss $name"."<br>";
+//   } else {
+//     echo "hello $name"."<br>";
+//   }
+// }
+
+// // Needed Output
+// echo greeting("Osama", "Male"); // Hello Mr Osama
+// echo greeting("Eman", "Female"); // Hello Miss Eman
+// echo greeting("Sameh"); // Hello Sameh
+
+
+# task two
+
+// first method :  ...array
+// function get_arguments(...$words)
+// {
+//   $all = "";
+//   foreach ($words as $word) {
+//     $all = "$all $word";
+//   }
+//   return $all . "<br>";
+// }
+
+// // // // // Needed Output
+// echo get_arguments("Hello", "Elzero", "Web", "School"); // Hello Elzero Web School
+// echo get_arguments("I", "Love", "PHP"); // I Love PHP
+
+
+// second method :  built in functions php => func_get_args()
+
+// function get_arguments()
+// {
+//   $words = func_get_args();
+//     $all="";
+//   foreach ($words as $word) {
+//     $all = "$all $word";
+//   }
+//   return $all."<br>";
+// }
+
+// // // // Needed Output
+// echo get_arguments("Hello", "Elzero", "Web", "School"); // Hello Elzero Web School
+// echo get_arguments("I", "Love", "PHP"); // I Love PHP
+
+
+# task three
+
+// Write Function Content Here
+// function sum_all(...$nums)
+// {
+//     $result = 0;
+//     foreach ($nums as $num) {
+//         if ($num == 10) {
+//             $num = 20;
+//         } else if ($num == 5) {
+//             continue;
+//         }
+//         $result += $num;
+//     }
+//     return $result . "<br>";
+// }
+// Needed Output
+// echo sum_all(10, 12, 5, 6, 6, 10); // 64
+// echo sum_all(5, 10, 5, 10); // 40
+
+# task four
+
+// Write Function Content Here
+// function multiply(...$nums) {
+//     $result = 1;
+//     foreach ($nums as $num) {
+//         if (gettype($num) == gettype("string")) {
+//             continue;
+//         } elseif (gettype($num) == gettype(0.0)) {
+//             settype($num,"integer");
+//         }
+//         $result = $result * $num;
+//         echo "<br>";
+//     }
+//     return $result;
+// }
+// // Needed Output
+// echo multiply(10, 20 ); // 200
+// echo multiply("A", 10, 30); // 300
+// echo multiply(100.5, 10, "B"); // 1000
+
+# task five
+
+// function check_status($a, $b, $c) {
+//     $args = func_get_args();
+//     foreach ($args as $arg) {
+//         if(gettype($arg) == gettype("strint")) {
+//             $name = $arg;
+//         } else if(gettype($arg) == gettype(1)) {
+//             $age = $arg;
+//         } else if(gettype($arg) == gettype(true)) {
+//             $Available = $arg;
+//         }
+//     }
+//     if ($Available == true) {
+//         $result = "Hello $name, Your Age Is $age, You Are Available For Hire"."<br>";
+//     } else if ($Available == false) {
+//         $result = "Hello $name, Your Age Is $age, You Are not Available For Hire";
+//     }
+//     return $result;
+//   }
+
+//   // Needed Output
+//   echo check_status("Osama", 38, true); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
+//   echo check_status(38, "Osama", true); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
+//   echo check_status(true, 38, "Osama"); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
+//   echo check_status(false, "Osama", 38); // "Hello Osama, Your Age Is 38, You Are Not Available For Hire"
+
+# task six
+
+// Write Function Content Here
+
+// function calculate($num_One,$num_Two,$mathematical ="") {
+//     if($mathematical == "" or $mathematical == "a" or $mathematical == "add") {
+//         $result = $num_One + $num_Two;
+//         echo "<br>";
+//     } else if($mathematical == "s" or $mathematical == "subtract") {
+//         $result = $num_One - $num_Two;
+//         echo "<br>";
+//     } else if($mathematical == "m" or $mathematical == "multiply") {
+//         $result = $num_One * $num_Two;
+//         echo "<br>";
+//     } else {
+//         echo "<br>";
+//         $result = "$mathematical is not mathematical calculate"."<br>";
+//     }
+//     return $result;
+// }
+
+// // Needed Output
+// echo calculate(10, 20); // 30
+// echo calculate(10, 20, "a"); // 30
+// echo calculate(10, 20, "s"); // -10
+// echo calculate(10, 20, "subtract"); // -10
+// echo calculate(10, 20, "multiply"); // 200
+// echo calculate(10, 20, "m"); // 200
+// echo calculate(10, 20, "test"); // 200
+
+# task seven
+
+// function calculate(int $num_one, int $num_two)
+// {
+//     settype($num_one, "double");
+//     settype($num_two, "double");
+//     echo "<br>";
+//     return $num_one + $num_two;
+// }
+
+// echo calculate(20, 10); // 30
+// echo gettype(calculate(20, 10)); // Double
+
+# task eight
+
+// $message = "Hello";
+// $$message = $message;
+
+// // // Write Your Code Here
+
+// $$message = function($name,$message) {
+//     return "$message $name";
+// };
+
+// echo $Hello("Osama",$message); // Hello Osama
+
+# task nine
+
+// Write Function Content Here
+
+// $greet = function($name) {
+//     return "Greetings";
+// };
+
+// $greet = fn ($name) => "Greetings";
+
+// Needed Output
+// echo $greet("Osama"); // Greetings
